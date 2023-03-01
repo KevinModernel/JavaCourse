@@ -11,30 +11,18 @@ import lombok.ToString;
 @ToString @EqualsAndHashCode
 public class Usuario {
 
-    @Getter
-    @Setter
-    @Column(name = "id")
     @Id
+    @Getter @Setter @Column(name = "id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
-    @Getter
-    @Setter
-    @Column(name = "nombre")
+    @Getter @Setter @Column(name = "nombre")
     private String nombre;
-    @Getter
-    @Setter
-    @Column(name = "apellido")
+    @Getter @Setter @Column(name = "apellido")
     private String apellido;
-    @Getter
-    @Setter
-    @Column(name = "email")
+    @Getter @Setter @Column(name = "email")
     private String email;
-    @Getter
-    @Setter
-    @Column(name = "telefono")
+    @Getter @Setter @Column(name = "telefono")
     private String telefono;
-    @Getter
-    @Setter
-    @Column(name = "password")
+    @Getter @Setter @Column(name = "password")
     private String password;
 }

@@ -17,9 +17,6 @@ public class UsuarioController {
     @Autowired
     private JWTUtil jwtUtil;
 
-    public UsuarioController() {
-    }
-
     @RequestMapping(value = "api/usuarios/{id}", method = RequestMethod.GET)
     public Usuario getUsuario(@PathVariable Long id) {
         Usuario usuario = new Usuario();
